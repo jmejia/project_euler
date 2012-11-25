@@ -14,4 +14,4 @@ end
 
 @fibs.pop
 @fibs.delete_if { |fib| fib.odd? }
-puts @fibs.inject(:+)
+puts "The sum of the even-valued terms below 4 million in the Fibonacci sequence is #{@fibs.inject(:+)}."
