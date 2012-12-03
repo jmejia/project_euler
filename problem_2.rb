@@ -8,8 +8,7 @@
 
 def generate_fibs(previous, current)
   @fibs << previous + current
-  @previous = current
-  @current = @fibs.last
+  @previous, @current = current, @fibs.last
 end
 
 while @current < 4000000
